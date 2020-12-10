@@ -18,7 +18,7 @@
             <th scope="col">#</th>
             <th scope="col">Name</th>
             <th scope="col" class=" d-none d-sm-table-cell">Description</th>
-            <th scope="col" class=" d-none d-sm-table-cell">Price</th>
+            <th scope="col" class="w-auto">Price</th>
             <th></th>
         </tr>
         </thead>
@@ -28,7 +28,7 @@
                 <th class="w-auto" scope="row">{{ $post->id }}</th>
                 <td class="w-auto">{{ $post->title }}</td>
                 <td class="w-auto  d-none d-sm-table-cell">{{ $post->description }}</td>
-                <td class="w-auto  d-none d-sm-table-cell">{{ $post->price }}</td>
+                <td class="w-auto">{{ $post->price }}</td>
                 <td class="table-buttons d-flex">
                     <a  href="{{ route('posts.show', $post) }}" class="btn btn-info btn-lg  mr-2">
                         <i class="fa fa-eye"></i>
