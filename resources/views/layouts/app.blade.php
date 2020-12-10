@@ -28,6 +28,7 @@
         $('.alert-success').fadeOut(3000);
     });
     </script>
+
   <footer class="font-small footer" style=" position: absolute;bottom: 0;width: 100%;background-color: #222831;">
       <div class="footer-copyright text-center py-3 bg-dark text-white">&copy; <?php echo date('Y')?> Copyright:
           <a href="#" class="text-light">laevad</a>

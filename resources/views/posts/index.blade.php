@@ -27,20 +27,20 @@
             <tr>
                 <th class="w-auto" scope="row">{{ $post->id }}</th>
                 <td class="w-auto">{{ $post->title }}</td>
-                <td class="w-auto  d-none d-sm-table-cell">{{ $post->description }}</td>
+                <td class="w-100  d-none d-sm-table-cell">{{ $post->description }}</td>
                 <td class="w-auto">{{ $post->price }}</td>
-                <td class="table-buttons d-flex">
-                    <a  href="{{ route('posts.show', $post) }}" class="btn btn-info btn-lg  mr-2">
-                        <i class="fa fa-eye"></i>
+               <td class="table-buttons d-flex">
+                    <a href="{{ route('posts.show', $post) }}" class="btn btn-success btn-lg mr-1">
+                    <i class="fa fa-eye"></i>
                     </a>
-                    <a href="{{ route('posts.edit', $post) }}" class="btn btn-warning btn-lg  mr-2">
-                        <i class="fa fa-pencil" ></i>
+                    <a href="{{ route('posts.edit', $post) }}" class="btn btn-primary btn-lg mr-1">
+                    <i class="fa fa-pencil" ></i>
                     </a>
                     <form method="POST" action="{{ route('posts.destroy', $post) }}">
-                        @csrf
-                        @method('DELETE')
+                    @csrf
+                    @method('DELETE')
                         <button type="submit" class="btn btn-danger btn-lg">
-                            <i class="fa fa-trash"></i>
+                        <i class="fa fa-trash"></i>
                         </button>
                     </form>
                 </td>
