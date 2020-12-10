@@ -51,7 +51,7 @@ class PostController extends Controller
 
         $post->save();
 
-        return redirect('/posts')->with('success', 'Пост успешно добавлен!');
+        return redirect('/posts')->with('success', 'Post added successfully!');
     }
 
     /**
@@ -101,7 +101,7 @@ class PostController extends Controller
         $post->price = $request->get('price');
         $post->save();
 
-        return redirect('/posts')->with('success', 'Пост успешно отредактирован!');
+        return redirect('/posts')->with('success', 'Post edited successfully!');
     }
 
     /**
@@ -115,6 +115,6 @@ class PostController extends Controller
         $post = Post::find($id);
         $post->delete();
 
-        return redirect('/posts')->with('success', 'Пост удален!');
+        return redirect('/posts')->with('success', 'Post deleted!');
     }
 }
